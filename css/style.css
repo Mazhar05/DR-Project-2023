@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+    h3 {
+        font-size: 17px;
+    }
+}
+
+
+
+.row .col-4 {
+    position: relative;
+    overflow: hidden;
+}
+
+.row .col-4 img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.row .col-4 img {
+    box-shadow: 0 10px 15px rgba(0, 37, 80, 0.637);
+}
+
+.row .col-4:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.row .col-4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid #3498db; /* Choose your border color */
+    border-radius: 10px; /* Adjust the border radius */
+    opacity: 0; /* Initially transparent */
+    transition: opacity 0.3s;
+}
+
+.row .col-4:hover::before {
+    opacity: 1;
+}
+
+
+
+
+
